@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Istok+Web&family=Neuton&family=Sacramento&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+h1{
+    font-family: 'Sacramento', cursive;
+    margin-bottom: 0;
+}
+#background{
+    box-shadow: 0 10px 20px 0px rgba(0,0,0,.25);
+    padding: 1.5em;
+    background-color: white;
+}
+#header{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.star{
+    color: orange;
+    padding-right:0.4em;
+}
+
+nav ul{
+    display: flex;
+    list-style: "★";
+}
+
+ul li{
+    list-style: none;
+    padding-left: 1em;
+}
+
+a{
+    font-family: 'Indie Flower', cursive;
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+}
+.current-page{
+    border-bottom: 1px solid;
+    padding: 4px;
+}
+.current-page:hover{
+    color: black;
+}
+a:hover{
+    color: green;
+}
+
+@media (max-width: 700px) {
+    #header{
+        flex-direction: column;
+    }
+    nav ul{
+        padding: 0;
+    }
+}
+
+
+

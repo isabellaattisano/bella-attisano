@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Personal Website: Isabella Attisano</title>
+            <link type="text/css" rel="stylesheet" href="styles/projects.css">
+            <script src="nav.js"></script>
+
+        </head>
+        
+        <div id = "background">
+            <div id = "header">
+                <h1 id = "name">Isabella Attisano</h1>
+                <span id = "closebtn" onclick = "closeNav()">&#10799;</span>
+                <span id = "small" onclick = "openNav()">&#9776;</span>
+            <nav id = "nav">
+                <ul id = "ul">
+                    <li class = "ulli"><span class = "icon">&#10047;</span><a onclick = "closeNav()" href="index.html"><b>Home</b></a></li>
+                    <li  class = "ulli"><span class = "icon">&#10047;</span><a onclick = "closeNav()" href="index.html#about-section"><b>About Me</b></a></li>
+                    <li  class = "ulli"><span class = "icon">&#10047;</span><a onclick = "closeNav()" href = "projects.html"><b>Projects</b></a></li>
+                    <li  class = "ulli"><span class = "icon">&#10047;</span><a onclick = "closeNav()" href = "index.html#contact-section"><b>Contact</b></a></li>
+                </ul>
+            </nav>
+            </div>
+        </div>
+        <body>
+
+        <div id = "description">
+        
+        </div>
+
+        <div id="projects">
+            <div id = "group1">
+            <a id="sudoku" href = "projects/sudoku/sudoku.php">
+                <div class = "projects">
+                    <h3>Sodoku</h3>
+                    <p>
+                        Language: PHP, Javascript 
+                        <br><br>Description: Using PHP and Javascript, the user can either input a sudoku board to be solved, or generate a random board to be solved.
+                    </p>
+                </div>
+            </a>
+            <a id = "prog-team" href = "https://github.com/isabellaattisano/programming-team">
+                <div class = "projects">
+                    <h3>Programming-Team</h3>
+                    <p>
+                        Language: Java, Python 3
+                        <br><br>Description: Solutions to a series of Kattis problems. 
+                    </p>
+                </div>
+            </a>
+        </div>
+
+        <div id = "group2">
+           <a id="calculator" href = "projects/calculator/calculator.html">
+                <div class = "projects">
+                    <h3>Simple Calculator</h3>
+                    <p>
+                        Language: Javascript
+                        <br><br>Description: This program uses javascript functions and the Document Object Model to serve as a simple calculator.
+                    </p>
+                </div>
+            </a>
+            <a id="hangman" href = "projects/hangman/hangman.html">
+                <div class = "projects">
+                    <h3>Hangman</h3>
+                    <p>
+                        Language: Javascript
+                        <br><br>Description: This simple hangman game connects to a random word API, generating an arbitrary word for the user to guess. 
+                    </p>
+                </div>
+            </a>
+        </div>
+
+        <div id = "group3">
+
+            <a id="web_portfolio" href = "web_portfolio/index.html">
+                <div class = "projects">
+                    <h3>Web-Portfolio</h3>
+                    <p>
+                        Language: PHP, Javascript
+                        <br><br>Description: This web portfolio shows off what we learned in Platform Computing. It was inspired by the University of Washington's web design course.
+                    </p>
+                </div>
+            </a>
+
+            <a id="game" href = "projects/card-game/cardgame.html">
+                <div class = "projects">
+                    <h3>Card Game</h3>
+                    <p>
+                        Language: Javascript
+                        <br><br>Description: Each animal card has an idenitcal match. The user has 10 attempts to pair all of the cards.
+                    </p>
+                </div>
+            </a>
+
+        </div>
+            </div>
+        </body>
+</html>

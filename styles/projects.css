@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap&family=Indie+Flower&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+
+/* Navigation Bar */
+
+#header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between; 
+    align-items: center;
+    background: white;
+    border-radius: 4px;
+    z-index: 2;
+}
+
+#name{
+    font-family: 'Pacifico', cursive;
+    padding: 1.1rem;
+    color: #a6b8a7;
+    padding-left: 2.6rem;
+}
+
+nav ul{
+    display: flex;
+    padding-right: 3.9rem;
+    color: black;
+
+}
+
+ul li{
+    list-style: none;
+    padding-left: 2.6em;
+    color: black;
+
+}
+
+li a{
+    color: black;
+
+}
+
+.icon{
+    color:rgb(106, 143, 121);
+    padding-right:0.6em;
+
+}
+
+/* project boxes */
+
+#projects{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#group1, #group2, #group3{
+    display: flex;
+    flex-direction: row;
+}
+.projects{
+   margin: 1.3rem;
+}
+
+#projects a {
+    border: 2px solid;
+    margin: 0 auto;
+    flex-basis: 47%;
+    margin-bottom: 3rem;
+    border-radius: 40px;
+    font-family: 'Asap', sans-serif;
+}
+
+#description{
+    width: 90%;
+    border-bottom: 1px solid;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+}
+
+h3{
+    font-family: 'Indie Flower', cursive;
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+#projects p{
+    font-size: 0.8em;
+    margin-top: 1rem;
+}
+
+#sudoku, #hangman{
+    background-color: #c7d3f0;
+}
+
+#web_portfolio, #prog-team{
+    background-color: #e8ecf8;
+}
+
+#calculator, #game{
+    background-color: #abbbe7;
+}
+
+/* Links */
+
+a{
+    font-family: 'Indie Flower', cursive;
+    text-decoration: none;
+    color: black;
+    font-size: 1.2em;
+}
+#nav a:hover{
+    color: green;
+}
+
+#projects a:hover{
+    border-color: #D8E2DC;
+    box-shadow: 0.3em 0.3em 1em rgba(0,0,0,0.3);
+    
+}
+
+#coming{
+    font-size: 1.3em !important;
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    font-weight: lighter;
+    color: white;
+}
+
+/* overflow */
+
+#small{
+    display: none;
+    cursor:pointer;
+    color: black;
+    font-size: 2em;
+    padding-right: 1em;
+    /* animation: close_navigator_text 0.8s; */
+}
+
+#closebtn{
+    font-size: 4em;
+    display: none;
+    cursor:pointer;
+    color:white;
+    padding-left: 1em;
+    padding-top: 3rem;
+
+}
+
+#overflowHeader {
+    display: flex;
+    width: 100%;
+    justify-content: space-between; 
+    position: fixed;
+    background:#accab4;
+    animation: open_navigator 0.7s;
+    overflow: scroll;
+    height: 100%;
+}
+
+
+#overflowNav {
+    display: flex;
+    padding: 0rem;
+    margin: 0 auto;
+    overflow: scroll;
+}
+
+#overflowNav .icon {
+    display: none;
+}
+
+#overflowNav li {
+    /* height: 100%; */
+    padding: 0rem;
+    margin: 0 auto;
+    padding-top: 3rem;
+    padding-bottom: 0.5rem;
+
+}
+
+#overflowName{
+    display: none;
+}
+
+#overflowNav a{
+    color: white;
+}
+
+#overflowNav a:hover{
+    color: rgb(203, 238, 203);
+}
+
+#overflowUl{
+   flex-direction: column;
+   font-size: 2em;
+
+}
+
+#overflowSmall{
+    display: none;
+}
+
+/* keyframes */
+@keyframes open_navigator {
+    0%{ height: 0%; 
+    }
+
+    100%{ height: 100%; }
+}
+
+/* media */
+
+@media (max-width: 870px) {
+    nav{
+        display: none;
+    }
+    nav ul{
+        padding: 0;
+    }
+    #small{
+        display: inline;
+    }
+
+    #contact{
+        height: 20vw;
+    }
+
+}
+
+@media (max-width: 750px){
+    #projects{
+        width: 60%;
+        flex-direction: column;
+    }
+
+    #group1, #group2, #group3{
+        display: flex;
+        flex-direction: column;
+    }
+}

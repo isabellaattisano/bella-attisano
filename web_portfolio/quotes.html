@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <script>
+            var getQuote = function(){
+                var request = new XMLHttpRequest();
+                request.open("GET", "https://api.quotable.io/random", true);
+                request.onload = function(){
+                    var data = JSON.parse(this.response);
+                    var quote = data.content;
+                    var author = data.author;
+                    var quo = document.getElementById("quote");
+                    quo.innerHTML = quote;
+                    var aut =  document.getElementById("author");
+                    aut.innerHTML = "- " + author;
+                };
+
+            request.send();
+
+    
+        }
+        </script>
+    </head>
+    <body onload="getQuote()">
+        <a id = "arrow" href ="../projects.html"><h2>&#8592;</h2></a>
+        <h1>Daily Quote</h1>
+        <h2 id = "quote"></h2>
+        <h3 id = "author"></h3>
+        <div id="center"><button onClick="getQuote()">Get Another</button></div>
+    </body>
+</html>
+
+<style>
+    h1{
+        text-align: center;
+        font-weight: lighter;
+        margin-top: 2rem;
+    }
+    #quote, h3{
+        font-weight: lighter;
+        text-align: center;
+    }
+
+    #center{
+        width: 5.5rem;
+        margin: 0 auto;
+    }
+    button{
+        border-radius: 10px;
+        background-color: rgb(232, 243, 253);
+        padding-bottom: 0.7rem;
+        padding-top: 0.7rem;
+    }
+    button:hover{
+        background-color: white;
+    }
+
+    #arrow h2{
+  text-decoration: none;
+  font-size: 3rem;
+  font-family: 'Pacifico', cursive;
+  padding: 0;
+  margin: 0rem;
+  padding-left: 1rem;
+
+}
+
+#arrow{
+  text-decoration: none;
+
+}
+
+</style>

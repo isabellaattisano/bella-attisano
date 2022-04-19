@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+table {
+    border-collapse : collapse;
+    margin: 0 auto;
+ }
+ td {
+   border: 1px solid black;
+   padding: 10px;
+   margin: 0px;
+   width: 2rem;
+    height: 2rem;
+ }
+ button{
+   margin-top: 2em;
+ }
+
+ #r31, #r32, #r33, #r34, #r35, #r36, #r37, #r38, #r39, #r61, #r62, #r63, #r64, #r65, #r66, #r67, #r68, #r69{
+    border-bottom: 3px solid;
+}
+#r13, #r23, #r33, #r43, #r53, #r63, #r73, #r83, #r93, #r16, #r26, #r36, #r46, #r56, #r66, #r76, #r86, #r96{
+    border-right: 4px solid;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    font-weight:lighter;
+
+}
+#arrow h2{
+    text-decoration: none;
+    font-size: 3rem;
+    font-family: 'Pacifico', cursive;
+    padding: 0;
+    margin: 0rem;
+    padding-left: 1rem;
+
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}

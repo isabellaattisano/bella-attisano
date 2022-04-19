@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Pacifico&family=Padauk&family=Satisfy&display=swap');
+h1 {
+    text-align: center;
+    font-size: 2.8em; 
+    color: white;
+    font-family: 'Satisfy', cursive;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+}
+
+
+body{
+    font-size: 1em;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    color: black;
+    text-align: left;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#border{
+  border: 3px solid rgb(47, 86, 136);
+  margin: 3em;
+  margin-top: 0rem;
+}
+
+#banner{
+    background-color: rgb(243, 243, 233);
+    border-bottom: solid;
+    border-top: solid;
+    background-color: rgb(174, 216, 245);
+    border-color: rgb(47, 86, 136);
+    padding: 1rem;
+
+}
+
+p, h3{
+  padding: 1rem;
+}
+
+table{
+    /* border: solid; */
+    margin-bottom: 20%;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 2rem;
+    font-family: 'Padauk', sans-serif;
+    padding: 0;
+
+}
+caption{
+    font-size: 2em;
+    font-family: 'Padauk', sans-serif;
+    margin-bottom: 1rem;
+   text-decoration: underline;
+
+}
+td, th{
+    padding-bottom: .5em;
+    margin: 0 auto;
+    margin: 0 auto;
+    text-align: center;
+}
+
+nav{
+    clear:left;
+    padding:2em;
+    margin: 0 auto;
+    text-align: center;
+    width: 40rem;
+
+  }
+  nav ul li {
+    float: left;
+    margin-right: 0.5em;
+  }
+  nav ul li a {
+    padding: 0.25em 1em;
+    text-decoration: none; /* no underline */
+    background-color: #EBF5FF; /* pale bluish white */
+    color: #4312AE; /* dark blue */
+    border: 2px solid black;
+    border-top-left-radius: 1em 1em; /* rounded corner! */
+    border-top-right-radius: 1em 1em; /* another rounded corner! */
+  }
+  
+  nav ul li a:hover, nav ul li a:focus {
+    color: black;
+    background-color: white;
+    font-weight: bold;
+  }
+
+    /*javascript css */
+li.jsList {
+    margin-top: 2rem;
+  }
+  button.jsFun {  
+    margin-left: 15%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  /*jsDom.html css */
+
+
+  #jsList{
+    margin-right: 0;
+    margin: 0 auto;
+  }
+
+
+  table#bankTable {  
+    margin: 0 auto;
+    width: 30%;
+    border: 3px solid;
+  }
+  table#bankTable caption {
+    font-size: 1.5em;
+  }
+  h2#jsDom {
+    text-align: center;
+    margin-bottom: 5%;
+  }
+  button.bankAction {
+    margin-left: 35%;
+    margin-top:2%;
+  }
+
+  #bankTable tr, #bankTable th{
+    padding: 0;
+  }
+
+  #center{
+    text-align: center;
+    width: 30%;
+    margin: 0 auto;
+  }
+
+  #center button{
+    padding: 0;
+    margin: 0;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    padding:0.5rem;
+    border-radius: 10px;
+    background-color: rgb(232, 243, 253);
+  }
+
+  #center button:hover{
+    background-color: rgb(240, 240, 240);
+  }
+
+  img{
+    max-width: 10px;
+    max-height: 10px;
+  }
+  
+/* Specific */
+#description{
+  text-align: center;
+  margin: 3rem;
+  padding:0;
+  font-family: 'Padauk', sans-serif;
+  font-size: 1.2rem;
+}
+
+#submit{
+  text-align: center;
+  margin: 0 auto;
+  border: 1px solid;
+}
+
+#arrow h2{
+  text-decoration: none;
+  font-size: 3rem;
+  font-family: 'Pacifico', cursive;
+  padding: 0;
+  margin: 0rem;
+  padding-left: 1rem;
+
+}
+
+#arrow{
+  text-decoration: none;
+
+}
+
+#noflex{
+  display:inline;
+}
+
+#noflex li{
+  text-decoration: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+
+}
+
+
+@media(max-width: 850px){
+  ul{
+    flex-direction: column;
+    text-align: center;
+    padding: 0;
+    margin-top: -1rem;
+  }
+  li{
+    margin-left: 0rem;
+    margin-right: 0;
+    margin-top: 1rem;
+  }
+  h1{
+    padding: 0;
+    margin: 0;
+  }
+
+  nav{
+    width: 100%;
+  }
+
+  #jsList{
+    margin-top: 3rem;
+  }
+
+
+}
