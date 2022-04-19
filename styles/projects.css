@@ -60,12 +60,13 @@ li a{
     margin: 0 auto;
 }
 
-#group1, #group2, #group3{
+#group1, #group4, #group3, #group2{
     display: flex;
     flex-direction: row;
 }
+
 .projects{
-   margin: 1.3rem;
+   margin: 1.2rem;
 }
 
 #projects a {
@@ -95,7 +96,7 @@ h3{
     margin-top: 1rem;
 }
 
-#sudoku, #hangman{
+#sudoku, #hangman, #fs, #new{
     background-color: #c7d3f0;
 }
 
@@ -241,7 +242,7 @@ a{
         flex-direction: column;
     }
 
-    #group1, #group2, #group3{
+    #group1, #group4, #group3, #group2{
         display: flex;
         flex-direction: column;
     }
