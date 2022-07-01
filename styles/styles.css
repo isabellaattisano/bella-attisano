@@ -274,8 +274,8 @@ a:hover{
         height: 20vw;
     }
 
-    body{
-        font-size: 20%;
+    #person{
+        font-size: 90%;
     }
 
 }
