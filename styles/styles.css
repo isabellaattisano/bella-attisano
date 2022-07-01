@@ -274,8 +274,8 @@ a:hover{
         height: 20vw;
     }
 
-    #person{
-        font-size: 90%;
+    .hair{
+        top:17em;
     }
 
 }
