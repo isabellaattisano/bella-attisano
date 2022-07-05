@@ -1,0 +1,78 @@
+<html>
+<head>
+    <link type="text/css" rel="stylesheet" href="styles/my_style.css" media="screen">
+   
+    <title>
+        Javascript
+    </title>        
+</head>
+<body>
+    <a id = "arrow" href ="../projects.html"><h2>&#8592;</h2></a>
+    <div id="border">
+        <div id="banner">
+            <h1>Web Portfolio: Javascript</h1>                      
+            <nav>
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="accessibility.html">Accessibility</a></li>
+                  <li><a href="Javascript.html">Javascript</a></li>
+                  <li><a href="php.html">PHP</a></li>
+                  <li><a href="web_services.html">Web Services</a></li>
+                </ul>
+              </nav>
+    </div>
+    <main id="main">
+        <h2 id="jsDom">Javascript: DOM demo</h2>     
+        <table id=bankTable>
+            <caption id="bankAccountTitle">Bank Account</caption>
+            <tr>
+                <th scope="col">Account</th>
+                <th scope="col">Balance</th>
+            </tr>
+            <tr>
+                <td>Checking</td>
+                <td id ="checkingBalance">500</td>
+            </tr>
+            <tr>
+                <td>Savings</td>
+                <td id="savingsBalance">1000</td>
+            </tr>
+        </table>
+        <div id = "center">
+            <button class="bankAction" onclick="updateChecking()">Deposit $100 Checking</button> <br>   
+            <button class="bankAction" onclick="updateSavings()">Deposit $100 Savings</button>    <br>
+            <button class="bankAction" onclick="emptySavings()">Empty Savings</button>    <br>
+        </div>
+    </div>   
+</body>
+</html>
+
+<script>
+    var updateChecking = function(){
+    checkingId = document.getElementById("checkingBalance");
+    console.log(checkingId);
+    var cBalance = checkingId.innerHTML;
+    console.log(cBalance);
+    cBalance = parseInt(cBalance, 10);
+    cBalance += 100;
+    checkingId.innerHTML = cBalance;
+}
+
+var updateSavings = function(){
+    savingsId = document.getElementById("savingsBalance");
+    var sBalance = savingsId.innerHTML;
+    sBalance = parseInt(sBalance, 10);
+    if(sBalance == 0){
+        document.getElementById("bankAccountTitle").innerHTML = "Bank Account";
+    }
+    sBalance+=100;
+    savingsId.innerHTML = sBalance;
+}
+
+var emptySavings = function(){
+    document.getElementById("savingsBalance").innerHTML = 0;
+
+    document.getElementById("bankAccountTitle").innerHTML = "Alert: Savings Empty";
+
+}
+</script>

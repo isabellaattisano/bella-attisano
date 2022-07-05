@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Arapey&family=Ms+Madi&family=Pacifico&family=Padauk&family=Satisfy&display=swap');
+
+body{
+    padding-bottom: 10em;
+}
+
+#arrow h2{
+    text-decoration: none;
+    font-size: 3rem;
+    font-family: 'Pacifico', cursive;
+    padding: 0;
+    margin: 0rem;
+    padding-left: 1rem;
+  
+  }  
+  
+  #arrow{
+    text-decoration: none;
+    color: black;
+  
+  }
+  #title{
+    font-size: 3rem;
+    text-align: center;
+    font-family: 'Ms Madi', cursive;
+    font-weight:lighter;
+    word-spacing: 8px;
+    color: rgb(161, 141, 130);
+}
+
+.head{
+    padding-left: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    font-family: 'Arapey', serif;  
+    font-weight:lighter;
+    word-spacing: 8px;
+    color: rgb(174, 188, 164);
+    width: 60%;
+    margin: 0 auto;
+}
+
+p, ul, ol{
+    font-size: 1.1rem;
+    font-weight:lighter;
+    padding-left: 1rem;
+    font-family: 'Asap', sans-serif;
+    flex-direction: column;
+}
+
+#overviewdiv{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    /* border: 1px solid black; */
+}
+
+#diskdiv{
+    margin: 0 auto;
+    width: 60%; 
+}
+
+ul, ol{
+    padding-left: 4rem;
+}
+
+#overview, #superblock{
+    width: 20em;
+    padding-left: 2em;
+}
+
+#interface{
+    width: 50em;
+    padding-left: 2rem;
+    margin: 0 auto;
+}
+
+
+
+@media (max-width: 1150px){
+    #overviewdiv, #diskdiv{
+        margin: 0;
+        width: 97%;
+    }
+    
+    .head{
+        width: 97%;
+    }
+    p{
+        width: 97%;
+    }
+   #overview, #superblock{
+        width: 15em; 
+    }
+    #interface{
+        margin:0;
+        padding-left: 1rem;
+        width: 70%;
+    }
+} 
+

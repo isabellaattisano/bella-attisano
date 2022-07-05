@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+#flex{
+    display:flex;
+}
+#alphabet{
+    display: flex;
+    margin: 0 auto;
+    width: 35rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    
+}
+
+.letters{
+    margin-bottom: 1.5rem;
+    margin-left: 1rem;
+    height: 2em;
+    width: 2em;
+    border-radius: 4px;
+    border: 0px;
+    background-color: rgb(181, 209, 181);
+}
+
+.letters:hover{
+    background-color: rgb(81, 133, 81);
+}
+
+#title{
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    font-weight:lighter;
+    word-spacing: 12%;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+#letters{
+    display: flex;
+    text-emphasis: center;
+    margin: 0 auto;
+    width: 60%;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+}
+
+.lines{
+    padding-left: 2rem;
+    margin: 0 auto;
+}
+
+#diagram{
+    margin: 0 auto;
+    width: 44rem;
+    margin-bottom: -10rem;
+}
+
+
+#win{
+   text-align: center;
+   font-size: 2rem;
+   font-weight: lighter;
+
+}
+
+#pole{
+    width: 0.2rem;
+    height: 20rem;
+    background-color: black;
+    margin-top: 2.5rem;
+    margin-left: 20rem;
+
+}
+
+#pole::after{
+    content: '';
+    position: absolute;
+    width: 0.2rem;
+    height: 10rem;
+    background-color: black;
+    transform: rotate(90deg);
+    margin-top: 15rem;
+
+}
+
+#pole::before{
+    content: '';
+    position: absolute;
+    width: 0.2rem;
+    height: 8rem;
+    background-color: black;
+    transform: rotate(90deg);
+    margin-top:-4rem;
+    margin-left: 4rem;
+
+}
+
+#head{
+    border-radius: 50%;
+    width: 4em;
+    height: 4em;
+    border: 1px solid;
+    margin-top: -17em;
+    margin-left: 26em;
+    color: white;
+    
+}
+
+#head::before{
+    content: '';
+    position: absolute;
+    width: 0.2rem;
+    height: 3rem;
+    background-color: black;
+    margin-left: 2em;
+    margin-top: -3em;
+}
+
+#body{
+    width: 0.1rem;
+    height: 7rem;
+    background-color: white;
+    margin-left: 28em;
+
+}
+
+#arm1{
+    width: 0.1rem;
+    height: 3rem;
+    background-color: white;
+    transform: rotate(32deg);
+    margin-left: 27.3em;
+    margin-top: -4.6em;
+
+}
+
+#arm2{
+    width: 0.1rem;
+    height: 3rem;
+    background-color: white;
+    transform: rotate(153deg);
+    margin-left: 28.7em;
+    margin-top: -2.86em;
+}
+
+#leg1{
+    width: 0.1rem;
+    height: 2rem;
+    background-color: white;
+    transform: rotate(-29deg);
+    margin-left: 28.5em;
+    margin-top: 1.2em;
+}
+
+#leg2{
+    width: 0.1rem;
+    height: 2rem;
+    background-color: white;
+    transform: rotate(32deg);
+    margin-left: 27.4em;
+    margin-top: -2em;
+}
+
+#arrow h2{
+    text-decoration: none;
+    font-size: 3rem;
+    font-family: 'Pacifico', cursive;
+    padding: 0;
+    margin: 0rem;
+    padding-left: 1rem;
+
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}

@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+td input{
+    width: 3rem;
+    height: 2rem;
+    text-align: center;
+}
+
+#solve, #reset, #generate{
+    width: 5.9rem;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 1.7rem;
+    font-size: large;
+    border-radius: 10px;
+    border: 1px solid;
+    padding: 0.3em;
+    background-color: rgb(236, 236, 236);
+    font-size: 1rem;
+   
+
+}
+
+#solve:hover, #reset:hover, #generate:hover{
+    box-shadow: 0 3px 10px rgb(182, 182, 182);
+}
+
+#solve{
+    margin-top: 2.4rem;
+}
+#generate{
+    margin: 0 auto;
+    margin-bottom: 1.5rem;
+    width: 13rem;
+}
+
+#center{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 13rem;
+}
+
+#Center1{
+    width: 13rem;
+    margin: 0 auto;
+
+}
+
+form{
+    margin: 0 auto;
+}
+
+table{
+    margin: 0 auto;
+    border-collapse : collapse;
+    border: 3px solid;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Pacifico', cursive;
+    font-weight:lighter;
+    margin-top: -2rem;
+
+}
+
+#r31, #r32, #r33, #r34, #r35, #r36, #r37, #r38, #r39, #r61, #r62, #r63, #r64, #r65, #r66, #r67, #r68, #r69{
+    border-bottom: 3px solid;
+}
+#r13, #r23, #r33, #r43, #r53, #r63, #r73, #r83, #r93, #r16, #r26, #r36, #r46, #r56, #r66, #r76, #r86, #r96{
+    border-right: 3px solid;
+}
+
+#arrow h2{
+    text-decoration: none;
+    font-size: 3rem;
+    font-family: 'Pacifico', cursive;
+    padding: 0;
+    margin: 0rem;
+    padding-left: 1rem;
+
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
