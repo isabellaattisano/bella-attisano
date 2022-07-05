@@ -3,7 +3,7 @@
 foreach($_FILES["fileToUpload"] as $key => $value){
 } 
 
-if($_SERVER["REQUEST_METHOD"] == "POST"){
+if($_SERVER["REQUEST_METHOD"] == "GET"){
   $name = $_POST["pet_name"];
   $type = $_POST["pet_type"];
   $target_dir = "images/";

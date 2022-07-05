@@ -1,1 +1,2 @@
 boo,Dog,images/boo.jpeg
+,,images/

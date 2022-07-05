@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Personal Website: Isabella Attisano</title>
+            <link type="text/css" rel="stylesheet" href="styles/projects.css">
+            <script src="nav.js"></script>
+
+        </head>
+
+            <div id = "header">
+                <h1 id = "name">Isabella Attisano</h1>
+                <span id = "closebtn" onclick = "closeNav()">&#10799;</span>
+                <span id = "small" onclick = "openNav()">&#9776;</span>
+                <nav id = "nav">
+                    <ul id = "ul">
+                        <li class = "ulli"><span class = "icon">&#10047;</span><a onclick = "closeNav()" href="index.html"><b>Home</b></a></li>
+                        <li  class = "ulli"><span class = "icon">&#10047;</span><a onclick = "closeNav()" href="index.html#about-section"><b>About Me</b></a></li>
+                        <li  class = "ulli"><span class = "icon">&#10047;</span><a onclick = "closeNav()" href = "projects.html"><b>Projects</b></a></li>
+                        <li  class = "ulli"><span class = "icon">&#10047;</span><a onclick = "closeNav()" href = "index.html#contact-section"><b>Contact</b></a></li>
+                    </ul>
+                </nav>
+
+            </div>
+            
+            <div id = "projects">
+                <h1 class = "title">DATA ANALYSIS PROJECTS</h1>
+                <div id = boxes>
+                    <div class = "box">
+                        <img class = "cover" src = "cover_photos/data.png">
+                        <h1>Baby Name Analysis</h1>
+                        <p>Language: Python
+                            <br><br>This project uses data taken from the U.S. Social Security Baby Name Catalog which reports the names given to babies between the years 1880 and 2021. It analyzes components such as individual name frequency, the most popular baby names based on gender, the most popular gender neutral baby names, etc.</p>
+                        <div class = "choice">
+                            <div id = "view"><a href = "https://github.com/isabellaattisano/DataAnalysis/blob/main/Baby%20Name%20Analysis%20.ipynb">View Project</a></div>
+                            <div class = "git"><a href = "https://github.com/isabellaattisano/DataAnalysis/blob/main/Baby%20Name%20Analysis%20.ipynb">Github</a></div>
+                        </div>
+                    </div>   
+
+                </div>
+            </div>

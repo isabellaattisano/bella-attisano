@@ -1,5 +1,5 @@
 <?php include 'header.php';?>
-<form method="post" enctype="multipart/form-data" action="processPet.php">
+<form method="get" enctype="multipart/form-data" action="processPet.php">
       <h3>Add Pet Details</h3>
         <p>Name<br/>
            <input type="text" name="pet_name" />

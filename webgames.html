@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Personal Website: Isabella Attisano</title>
+            <link type="text/css" rel="stylesheet" href="styles/projects.css">
+            <script src="nav.js"></script>
+
+        </head>
+
+            <div id = "header">
+                <h1 id = "name">Isabella Attisano</h1>
+                <span id = "closebtn" onclick = "closeNav()">&#10799;</span>
+                <span id = "small" onclick = "openNav()">&#9776;</span>
+                <nav id = "nav">
+                    <ul id = "ul">
+                        <li class = "ulli"><span class = "icon">&#10047;</span><a onclick = "closeNav()" href="index.html"><b>Home</b></a></li>
+                        <li  class = "ulli"><span class = "icon">&#10047;</span><a onclick = "closeNav()" href="index.html#about-section"><b>About Me</b></a></li>
+                        <li  class = "ulli"><span class = "icon">&#10047;</span><a onclick = "closeNav()" href = "projects.html"><b>Projects</b></a></li>
+                        <li  class = "ulli"><span class = "icon">&#10047;</span><a onclick = "closeNav()" href = "index.html#contact-section"><b>Contact</b></a></li>
+                    </ul>
+                </nav>
+
+            </div>
+            
+            <div id = "projects">
+                <h1 class = "title">GAMES</h1>
+                <div id = boxes>
+                    <div class = "box">
+                        <img class = "cover" src = "cover_photos/calc.png">
+                        <h1>Simple Calculator</h1>
+                        <p>Language: Javascript
+                            <br><br>Description: This program uses javascript functions and the Document Object Model to serve as a simple calculator.</p>
+                        <div class = "choice">
+                            <div id = "view"><a href = "projects/calculator/calculator.html">View Project</a></div>
+                            <div class = "git"><a href = "https://github.com/isabellaattisano/bella-attisano/tree/main/projects/calculator">Github</a></div>
+                        </div>
+                    </div>    
+    
+                    <div class = "box">
+                        <img class = "cover" src = "cover_photos/sodoku.png">
+                        <h1>Sudoku Solver</h1>
+                        <p>Language: PHP, Javascript 
+                            <br><br>Description: Using PHP and Javascript, the user can either input a sudoku board to be solved, or generate a random board to be solved.</p>
+                        <div class = "choice">
+                            <div id = "view"><a href = "projects/sudoku/sudoku.php">View Project</a></div>
+                            <div class = "git"><a href = "https://github.com/isabellaattisano/bella-attisano/tree/main/projects/sudoku">Github</a></div>
+                        </div>
+                    </div> 
+
+                    <div class = "box">
+                        <img class = "cover" src = "cover_photos/cards.png">
+                        <h1>Matching Card Game</h1>
+                        <p>Language: Javascript
+                        <br><br>Description: Each animal card has an idenitcal match. The user has 10 attempts to pair all of the cards.
+                        </p>
+                        <div class = "choice">
+                            <div id = "view"><a href = "projects/card-game/cardgame.html">View Project</a></div>
+                            <div class = "git"><a href = "https://github.com/isabellaattisano/bella-attisano/tree/main/projects/card-game">Github</a></div>
+                        </div>
+                    </div> 
+
+                    <div class = "box">
+                        <img class = "cover" src = "cover_photos/hangman.png">
+                        <h1>Hangman</h1>
+                        <p>
+                            Language: Javascript
+                            <br><br>Description: This simple hangman game connects to a random word API, generating an arbitrary word for the user to guess. 
+                        </p>
+                        <div class = "choice">
+                            <div id = "view"><a href = "projects/hangman/hangman.html">View Project</a></div>
+                            <div class = "git"><a href = "https://github.com/isabellaattisano/bella-attisano/tree/main/projects/hangman">Github</a></div>
+                        </div>
+                    </div> 
+
+
+                </div>
+            </div>
