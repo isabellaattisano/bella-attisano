@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Arapey&family=Ms+Madi&family=Pacifico&family=Padauk&family=Satisfy&display=swap');
+
+body{
+    padding-bottom: 10em;
+}
+
+#arrow h2{
+    text-decoration: none;
+    font-size: 3rem;
+    font-family: 'Pacifico', cursive;
+    padding: 0;
+    margin: 0rem;
+    padding-left: 1rem;
+  
+  }  
+  
+  #arrow{
+    text-decoration: none;
+    color: black;
+  
+  }
