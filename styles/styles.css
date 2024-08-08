@@ -10,6 +10,7 @@
 body{
     overflow: visible;
     font-size:90%;
+    /* width: 100%; */
 }
 /* Navigation Bar */
 
@@ -87,37 +88,58 @@ a:hover{
     align-items: center;
 }
 
-    /* left */
-
-    #left{
-        flex: 1.1;
+    #left {
+        /* flex: 1.1; */
+        /* display: inline-flex; */
+        text-align: center;
+        margin: 0 auto;
     }
-
-    #left h1{
-        font-family: 'Asap', sans-serif;
-        font-size: 15vw;
-        /* border: 1px solid; */
-        overflow: hidden;
-        border-right: .1em solid black;
-        font-size: 15vw;
-        color: white;
-        animation: typing 4s steps(25, end) forwards,
-                   blinking 1s infinite;
-    }
-
-    #left h1 span{
-        color: #CBD5F0;
     
+    .typing {
+        font-size: 17vw;
+        color: white;
+        margin: 0 auto;
+        overflow: hidden; /* Hide overflowing text */
+        position: relative; /* Needed for cursor positioning */
+        /* animation: typing 4s steps(30, end) forwards; */
     }
-    #left h3{
-        font-family: 'Asap', sans-serif;
-        font-size: 1.7vw;
-        text-align: left;
-        margin-top: 2em;
-        color:white;
+    
+    .typing .word{
+        max-width: fit-content;
+        display: inline-block; 
+        white-space: nowrap;
+        overflow: hidden;
+        opacity: 0; 
+        animation: type 4s steps(25, end) forwards, blinking 1s infinite;
+    }
+    
+    .typing .word:nth-child(1) {
+        animation-delay: 0s;
+        border-right: 4px solid black;
+        animation: type 4s steps(25, end) forwards, blinking 1s infinite, remove-border 1s 3s forwards; /* Adjusted to remove border after 3s */
+    }
+    
+    .typing .word:nth-child(2) {
+        animation-delay: 3s; 
+        border-right: 4px solid black;
+        color: #CBD5F0;
+    }
+    
+    /* Typing animation */
+    @keyframes type {
+        from { width: 0; opacity: 1;}
+        to { width: 100%; opacity: 1;}
     }
 
-   
+
+@keyframes blinking {
+    from { border-color: transparent }
+    to { border-color: #CBD5F0; }
+} 
+@keyframes remove-border {
+    0% { border-color: transparent }
+    100% { border-color: transparent; }
+} 
 
     /* right */
 
@@ -138,10 +160,10 @@ a:hover{
     #about-title{
         font-family: 'Arima', cursive;
         text-align: left;
-        font-size: 2.8rem;
+        font-size: 2.2rem;
         /* padding: 4rem 0 0 2rem; */
         color:#0D3C1F;
-        margin-left: 1em;
+        margin-left: 0.3em;
 
     }
 
@@ -152,29 +174,139 @@ a:hover{
 
 
     #about p{
-        padding: 1.5rem;
+        /* padding: 1.5rem; */
         color: black;
         font-family: 'Asap', sans-serif;
         text-align: left;
         width: 85%;
-        font-size: 1.4em;
+        font-size: 1.2em;
         font-weight: lighter;
         line-height: 1.7rem;
         margin-left: 1.2em;
 
     }
+      
+      .timeline ul {
+        background: #D8E2DC;
+        width: 100vw;
+        padding-bottom: 2.5em;
+      }
+      
+      .timeline ul li {
+        list-style-type: none;
+        position: relative;
+        width: 0.6em;
+        margin: 0 auto;
+        /* padding-top: 50px; */
+        background: #fff;
+        /* width: 100%; */
+        
+      }
+      
+      .timeline ul li::after {
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background: inherit;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2px solid rgb(27, 88, 23);
+      }
 
+    .timeline ul li:nth-child(2n+1)::after {
+        content: '\1F33F';
+    }
+    
+    .timeline ul li:nth-child(2n+2)::after {
+        content: '\1F331'; 
+    }
 
+      
+      .timeline ul li div {
+        position: relative;
+        bottom: 0;
+        padding: 2em;
+        padding-bottom: 0.5em;
+        width: 20em;
+        /* background: #9eb6a8; */
+        background-color: white;
+        border-radius: 2%;
+      }
+      
+      .timeline ul li div::before {
+        content: "";
+        position: absolute;
+        bottom: 7px;
+        width: 0;
+        height: 0;
+        border-style: solid;
+      }
+      
+      .timeline ul li:nth-child(2n+1) div {
+        left: 3em;
+      }
+      
+      .timeline ul li:nth-child(2n+1) div::before {
+        left: -12px;
+        border-width: 16px 16px 16px 0;
+        border-color: transparent white transparent transparent;
+      }
+      
+      .timeline ul li:nth-child(2n) div {
+        left: -26.5em;
+      }
+
+      
+      .timeline ul li:nth-child(2n) div::before {
+        right: -12px;
+        border-width: 16px 0 16px 16px;
+        border-color: transparent transparent transparent white;    
+    }
+
+        .ed{
+            text-align: left;
+            height:fit-content;
+        }
+      
+      .ed h1 {
+        display: block;
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-bottom: 8px;
+        color: #225b3b;
+        border-bottom: 1px solid #b6c7be;
+        line-height: 1.2em;
+        padding-top:0.5em;
+        padding-bottom:0.5em;
+
+      }
+    
+       .ed p{
+        font-family: 'Asap', sans-serif;
+        padding-bottom: 1.2em;
+       }
+     
+    
     /* Skills  */
     #skills{ 
         background-color: #D8E2DC; 
         display: flex;
-        justify-content: center; 
+        justify-content: space-evenly; 
+        text-align: center;
+        flex-direction: column;
     }
 
     #education, #experience{
-        width: 43%;
-        margin: 3em 3em 0 0;
+        margin: 2em 2em 0 0;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
     }
 
     #education h1, .education h1, .education h1, .education h2, .education h2, .education h3{
@@ -183,15 +315,21 @@ a:hover{
 
     #education .title, #experience .title{
         font-size: 2.8em;
-        margin-bottom: 1em;
+        /* margin-bottom: 1em; */
         font-family: 'Arima', cursive;
+        
     }
 
     .education{
+        text-align: left;
+        margin: 0 auto;
         margin-bottom: 3em;
+        max-width: 60%;
     }
 
-
+    #skills-section{
+        padding-bottom: 3em;
+    }
     #skills-section #languages{
         width: 70%;
         font-family: 'Arima', cursive;
@@ -233,13 +371,13 @@ a:hover{
       .git, .c{ width: 80%; }
       .python{width: 86%;}
       .javascript, .php{width: 70%; }
-      .office{  width: 99%; }
+      .office{  width: 40%; }
       .android{width: 60%;}
       .data{width: 55%;}
 
     #awardsextra{
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
         margin: 0 auto;
         margin-top: 6em;
         width: 90%;
@@ -390,6 +528,7 @@ a:hover{
         max-width: 100%;
         font-size: 5rem;
     }
+    
 }
 
 @media(min-width: 1300px){
@@ -400,7 +539,6 @@ a:hover{
        max-width:40%;
        margin: auto;
     }
-    #education, #experience{ width: 38%;}
 
 }
 
@@ -487,20 +625,6 @@ a:hover{
     100%{ 
         dispaly: inline; 
     }
-}
-
-/* animations */
-@keyframes typing{
-    from { 
-        width: 0; 
-
-    }
-    to { width: 100%;}
-}
-
-@keyframes blinking {
-    from { border-color: transparent }
-    to { border-color: #CBD5F0; }
 }
 
 @keyframes fill{
